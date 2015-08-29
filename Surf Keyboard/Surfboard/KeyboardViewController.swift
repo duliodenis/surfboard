@@ -20,7 +20,14 @@ class KeyboardViewController: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        // Add a button to the keyboard
+        var button=UIButton(frame: CGRectMake(150, 40, 120, 120))
+        var hipster = UIImage(named: "hipster.png")
+        button.setBackgroundImage(hipster, forState: .Normal)
+        button.addTarget(self, action: "didPressButton", forControlEvents: .TouchUpInside)
+        view.addSubview(button)
+        
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton.buttonWithType(.System) as! UIButton
     
@@ -57,6 +64,12 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
         self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+    }
+    
+    
+    // MARK: - Button Action
+    func didPressButton() {
+        print("Hipster")
     }
 
 }

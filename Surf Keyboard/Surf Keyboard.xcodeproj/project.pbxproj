@@ -15,6 +15,7 @@
 		6CFBB07F1B90A6880011DFAE /* Surf_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB07E1B90A6880011DFAE /* Surf_KeyboardTests.swift */; };
 		6CFBB0911B90A6A80011DFAE /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0901B90A6A80011DFAE /* KeyboardViewController.swift */; };
 		6CFBB0941B90A6A80011DFAE /* Surfboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CFBB08C1B90A6A80011DFAE /* Surfboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CFBB09C1B9236F40011DFAE /* hipster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB09B1B9236F40011DFAE /* hipster.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		6CFBB08C1B90A6A80011DFAE /* Surfboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Surfboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBB08F1B90A6A80011DFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CFBB0901B90A6A80011DFAE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		6CFBB09B1B9236F40011DFAE /* hipster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hipster.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				6CFBB0901B90A6A80011DFAE /* KeyboardViewController.swift */,
+				6CFBB09B1B9236F40011DFAE /* hipster.png */,
 				6CFBB08E1B90A6A80011DFAE /* Supporting Files */,
 			);
 			path = Surfboard;
@@ -284,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFBB09C1B9236F40011DFAE /* hipster.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +532,7 @@
 				6CFBB0841B90A6880011DFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFBB0851B90A6880011DFAE /* Build configuration list for PBXNativeTarget "Surf KeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				6CFBB0871B90A6880011DFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFBB0951B90A6A80011DFAE /* Build configuration list for PBXNativeTarget "Surfboard" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				6CFBB0971B90A6A80011DFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
