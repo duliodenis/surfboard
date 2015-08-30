@@ -67,9 +67,22 @@ class KeyboardViewController: UIInputViewController {
     }
     
     
+    // MARK: - Quote Helper Method
+    
+    func randomQuote() -> String {
+        var quotes: [String] = ["Violence is my last option. – Chuck Norris", "Those who believe in telekinetics, raise my hand. – Kurt Vonnegut", "Rather be dead than cool. – Kurt Cobain", " I love deadlines. I like the whooshing sound they make as they fly by. – Douglas Adams", "A guilty conscience needs to confess. A work of art is a confession. – Albert Camus", "A day without sunshine is like, you know, night. – Steve Martin"]
+        
+        var quote = Int(arc4random_uniform(UInt32(quotes.count)))
+        
+        return quotes[quote]
+    }
+    
+    
     // MARK: - Button Action
+    
     func didPressButton() {
-        print("Hipster")
+        var proxy = textDocumentProxy as! UITextDocumentProxy
+        proxy.insertText(randomQuote())
     }
 
 }
